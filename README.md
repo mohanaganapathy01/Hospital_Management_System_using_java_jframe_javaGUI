@@ -304,7 +304,5 @@ Sales Report.
 - Inspiration
 
     Each and Every coders are inspiration to me. 
-- References
 
-    TutusFunny
 
