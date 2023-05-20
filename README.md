@@ -10,13 +10,7 @@
 
 ---
 
-<p align="center"> The purpose of the Electricity Billing System is to automate the existing manual system 
-with the help of computerized equipment and fullfledged computer software, fulfilling 
-their requirements, so that their valuable data/information can be stored for a long period
-with easy access and manipulation of the same. 
-The required software and hardware are easily available and easy to work with. 
-Electricity Billing System, as described above, can lead to an errorfree, secure, reliable 
-and fast management system.
+<p align="center"> The Hospital Management System is a comprehensive software solution designed to streamline the operations and management processes of a hospital or healthcare facility. This report presents an overview and implementation details of a Hospital Management System using Java JFrame, Java GUI, and MySQL as the backend database.
     <br> 
 </p>
 
@@ -24,8 +18,8 @@ and fast management system.
 - [Abstract](#abstract)
 - [Introduction](#introduction)
 - [Getting Started](#getting_started)
-- [Steps to Develop a EBS usng Java GUI](#steps_to_develop_a_ebs_using_java_gui)
-- [Electricty Billing System Usage](#usage)
+- [Steps to Develop a HMS usng Java GUI Jframe](#steps_to_develop_a_hms_using_java_gui_jframe)
+- [Hospital management system Usage](#usage)
 - [Flow Chart](#flowchart)
 - [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
@@ -33,45 +27,27 @@ and fast management system.
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 Abstract <a name = "abstract"></a>
-The purpose of Electricity Billing System is to automate the existing manual system by 
-the help of computerized equipments and full-fledged computer software, fulfilling their 
-requirements, so that their valuable data/information can be stored for a longer period 
-with easy accessing and manipulation of the same. 
+The Hospital Management System is an essential software solution for efficient and organized management of hospital operations. This abstract presents an overview of a Hospital Management System developed using Java JFrame, Java GUI, and MySQL as the backend database.
 
-The required software and hardware 
-are easily available and easy to work with.
-Electricity Billing System, as described above, can lead to error free, secure, reliable and
-fast management system. 
+The system addresses the diverse requirements of a hospital, including patient management, doctor management, appointment scheduling, billing and invoicing, inventory management, and reporting. The user interface is designed using Java JFrame and Java Swing components, ensuring a user-friendly experience.
 
-It can assist the user to concentrate on their other activities 
-rather to concentrate on the record keeping. Thus it will help organization in better 
-utilization of resources. The organization can maintain computerized records without 
-redundant entries. That means that one need not be distracted by information that is not 
-relevant, while being able to reach the information.
+The system follows a three-tier architecture, separating the presentation layer, business logic layer, and data access layer. The MySQL database is utilized to store and retrieve data related to patients, doctors, appointments, billing, and inventory.
 
+The implementation process involves database design, user interface design, business logic implementation, database connectivity, and testing. Thorough testing is performed to ensure the system's functionality, reliability, and usability.
 
-The aim is to automate its existing manual system by the help of computerized 
-equipments and full-fledged computer software, fulfilling their requirements, so that 
-their valuable data/information can be stored for a longer period with easy accessing and
-manipulation the same. Basically, the project describes how to manage for good 
-performance and better services for the clients. 
+The Hospital Management System streamlines operations, enhances efficiency, and improves patient care. It enables healthcare professionals to effectively manage patient records, schedule appointments, generate bills, track inventory, and generate insightful reports.
+
+The modular architecture of the system allows for scalability and future enhancements, ensuring that it can adapt to changing requirements and advancements in technology.
+
+In conclusion, the Hospital Management System developed using Java JFrame, Java GUI, and MySQL provides a comprehensive solution for managing hospital operations. It empowers healthcare facilities to optimize their processes and deliver high-quality care to patients.
 
 
 ## Introduction <a name = "introduction"></a>
-The "Electricity Billing System" has been developed to override the problems prevailing
-in the practicing manual system. This software is supported to eliminate and in some 
-cases reduce the hardships faced by this existing system. Moreover this system is 
-designed for the particular need of the company to carry out operations in a smooth and 
-effective manner.
+The management of a hospital or healthcare facility involves complex tasks that require efficient organization and coordination. To streamline these operations, a Hospital Management System is essential. This system automates various processes, such as patient management, appointment scheduling, billing and invoicing, inventory management, and reporting, providing a comprehensive solution for healthcare institutions.
 
+The purpose of this report is to present an overview and implementation details of a Hospital Management System developed using Java JFrame, Java GUI, and MySQL as the backend database. This system offers a user-friendly interface for healthcare professionals to manage their daily tasks effectively.
 
-The application is reduced as much as possible to avoid errors while entering the data. It 
-also provides error message while entering invalid data. No formal knowledge is needed 
-for the user to use this system. Thus by this all it proves it is user-friendly. Electricity 
-Billing System, as described above, can lead to error free, secure, reliable and fast 
-management system. It can assist the user to concentrate on their other activities rather 
-to concentrate on the record keeping. Thus it will help organization in better utilization 
-of resources
+The Hospital Management System is designed to meet the functional requirements of a hospital. It enables the registration and management of patient records, allowing healthcare providers to track and update patient information easily. The system also facilitates the management of doctors, including their details and availability, and assigns them to patients as required.
 
 
 
@@ -79,15 +55,17 @@ of resources
 ## 🏁 Getting Started <a name = "getting_started"></a>
 These instructions will get you to develop the Electricity Billing System project in java using (GUI) Graphical User Interface, Java Swing and Java awt. 
 
-[Steps to Develop a EBS usng Java GUI](#steps_to_develop_a_ebs_using_java_gui) 
+[Steps to Develop a HMS usng Java GUI Jframe](#steps_to_develop_a_hms_using_java_gui_jframe)
 
-1.NetBeans Installation
+1.NetBeans Installation.
 
-2.Create a Project File in beans
+2.Create a Project File in beans.
 
-3.Drag and Drop GUI'S
+3.Drag and Drop GUI'S.
 
-4.Button Configuration
+4.Button Configuration.
+
+5.Database Connection.
 
 ### NetBeans Installation
 NetBeans IDE is a Free open-Source, Cross-plate form Integrated Development 
@@ -163,46 +141,161 @@ Development. Under File Types, select Window Component. Click Next.
 ## Running the Project File <a name = "run"></a>
 After completing the project select the file right click it and choose Run. 
 
-After that the application will open we can do bill calculationg parts in the new opened window.
+The Hosptital Management System consist of three roles of login system known as:
 
-we can able to print the bill as three formats
+1.Doctor 
 
-1. Fax
+2.Receptionst 
 
-2. word document
+3.Pharmacist
 
-3. PDF file.
+4.Admin
 
-Its better we choose the file as in PDF format.
+![Screenshot (286)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/76acd287-6432-490c-b7a4-bd35e71d45ee)
 
-## Electricty Billing System Usage <a name="usage"></a>
-It has three major features.
+# The system shall be secure enough and only accessiable via valid usernames and passwards for each users.
 
-1. Text field:-
-In this project there are three main text field. In first one is Customer Id in which we 
-have to fill Customer Id in second one is for Customer Name in this we have to fill 
-customer Name and in the third one is for Unit which is consumed by the customer
+![Screenshot (281)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/26526c7a-0e13-4108-b612-7b89ba49a145)
 
-2. Cal Button:-
-Cal Button calculate the gross amount of the unit which consumed by the customer and 
-using lava code it calculate the total bill amount. In this project for different- different 
-unit range there is different rate of charge according to our given data
+## Hospital Management System Usage <a name="usage"></a>
+1. Introduction:
+The Hospital Management System is a comprehensive software solution designed to streamline the operations and management processes of a hospital or healthcare facility. This report presents an overview and implementation details of a Hospital Management System using Java JFrame, Java GUI, and MySQL as the backend database.
 
-3. Print Button:-
-In print button it print the all detailed which was shown by the cal button like Customer 
-Id, Customer Name Unit, and Amount etc
+2. System Requirements:
+To develop and run the Hospital Management System, the following software and tools are required:
+
+•Java Development Kit (JDK)
+
+•Integrated Development Environment (IDE) like Eclipse or IntelliJ IDEA
+
+•MySQL Database Server
+
+•MySQL Connector/J library
+
+•Java Swing library
+
+3. Functional Requirements:
+The Hospital Management System should fulfill the following functional requirements:
+Patient management: Register new patients, maintain patient records, and update their information.
+Doctor management: Add new doctors, manage doctor details, and assign doctors to patients.
+Appointment scheduling: Schedule appointments for patients and manage the doctor's availability.
+Billing and invoicing: Generate bills for patients based on services rendered and maintain billing records.
+Inventory management: Track and manage the inventory of medical supplies, equipment, and medicines.
+Reporting and analytics: Generate reports on patient demographics, revenue, appointments, and inventory status.
+User authentication and access control: Ensure secure access to the system with role-based permissions.
+
+4. System Architecture:
+The Hospital Management System follows a three-tier architecture:
+Presentation Layer: Implemented using Java JFrame and Java GUI for building interactive user interfaces.
+Business Logic Layer: Contains the core logic of the application, handling data validation, processing, and communication with the database.
+
+5. Data Access Layer: Utilizes MySQL as the backend database to store and retrieve data.
+Implementation:
+The implementation of the Hospital Management System involves the following steps:
+Step 1: Database Design:
+
+Create the required tables in the MySQL database to store information related to patients, doctors, appointments, billing, and inventory.
+Step 2: User Interface Design:
+
+Design the user interface using Java JFrame and Java Swing components to provide an intuitive and user-friendly experience.
+Step 3: Business Logic Implementation:
+
+Implement the business logic layer to handle data processing, validation, and communication with the database.
+Implement classes and methods to perform operations like patient registration, doctor management, appointment scheduling, billing, and inventory management.
+Step 4: Database Connectivity:
+
+Connect the application to the MySQL database using the MySQL Connector/J library.
+Implement methods to establish a connection, execute queries, and retrieve data from the database.
+Step 5: Testing and Debugging:
+
+Perform thorough testing to ensure the system's functionality, reliability, and usability.
+Debug and fix any issues or errors encountered during testing.
+
+6. Conclusion:
+The Hospital Management System implemented using Java JFrame, Java GUI, and MySQL provides an efficient and user-friendly solution for managing hospital operations. It enables healthcare professionals to streamline patient management, appointment scheduling, billing, and inventory management processes. The system's modular architecture allows for scalability and future enhancements to accommodate evolving requirements.
+
+It has four major features.
+
+## 1. Receptionst:-
+On discussing the receptionst’s power on the project, the receptionst has full access to the system.
+
+![Screenshot (282)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/455da73b-01db-4cbe-abbe-586bd9687a63)
+
+•Receptionst shall be able to add the patient details.
+
+# Patient.
+
+![Screenshot (283)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/464c7651-c71d-42dd-a39e-b70246fc9814)
+
+•Receptionst shall be able to retrieve the patient details.
+
+•Receptionst shall be able to able edit and delete the patient details.
+
+# User.
+
+![Screenshot (301)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/6828ffde-4f81-4bf5-8d72-8dc20d44dffd)
+
+•Receptionst shall be to able create the user types(Doctor,Receptionst,Pharmacist).
+
+
+
+## 2. Doctor:-
+![Screenshot (287)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/061bd7ac-c353-466f-82b8-b909edb6b85c)
+
+•Receptionst shall be to able add the doctor as a user.
+After created the doctor by user doctor shall be to login in to the system.Doctors shall be able to fill the registation form.Doctors shall be able to retrieve their details.Doctors shall be able to view the channel details.
+
+![Screenshot (288)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/7909dd8d-6781-403a-b1d1-50fcf9cf12eb)
+
+•Receptionst shall be able to retrieve the doctor details.
+
+•Receptionst shall be able to able edit and delete the doctor details.
+
+# Channel Creation.
+
+After examined the patient  doctor shall be able to click the prescription button. it will take you to the prescription form for  writing the prescription.
+Doctors shall be able to retrieve the prescription details.
+
+![Screenshot (291)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/b322691a-9737-4a6d-95dc-d0c42655e1e2)
+
+•Receptionst shall be to able create the channel.
+
+![Screenshot (292)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/aec240c3-9e4f-4252-a89c-35857717d089)
+
+•Receptionst shall be able to retrieve the create details.
+
+•Receptionst shall be to able cancel the channel.
+
+## 3. Pharmacist:-
+![Screenshot (303)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/a8db32f5-961c-4c10-87a3-d8b4c7c51401)
+
+# Prescription.
+![Screenshot (294)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/e0d271c1-908b-4978-b6ea-8bb68f646c0a)
+
+pharmacist shall be able to add the pharmacy items.
+
+# items Creation.
+![Screenshot (302)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/f2b2e848-9648-4ea7-afc7-195d7b359adc)
+
+pharmacist shall be able to view the prescription details upon requested by doctor.
+
+and the last one is sales invntary.
 
 ## Deployment <a name = "deployment"></a>
 
 First Run the file next we get a GUI for calculate the bills and print.
 
-![Screenshot (245)](https://user-images.githubusercontent.com/113513434/229305464-cf69e787-b1d1-42db-b21f-13463aaf6370.png)
+Sales Inventary.
 
-![Screenshot (220)](https://user-images.githubusercontent.com/113513434/229305557-187cbc4d-e661-40a4-9783-ca86c259e95d.png)
+![Screenshot (298)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/38b3804f-4084-4f76-a3a3-18243e36ac60)
+
+Sales Report.
+
+![Screenshot (300)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/22635f3a-b511-4ba1-8c29-a2db2e9c447f)
 
 ## ⛏️ Flow Chart <a name = "flowchart"></a>
+![Screenshot (305)](https://github.com/mohanaganapathy01/Hospital_Management_System_using_java_jframe_javaGUI/assets/113513434/6cb6eda8-e358-4faf-a147-378d8c9e8729)
 
-![Screenshot (247)](https://user-images.githubusercontent.com/113513434/229305777-24070c99-be2f-4ca6-8534-6dd79ca03537.png)
 
 ## ✍️ Author <a name = "author"></a>
 - [@Skill-Lync](https://github.com/mohanaganapathy01) Mohana Ganapathy
